@@ -1,0 +1,27 @@
+.post{
+    width: 550px;
+    display: flex;
+    background-color: #3F5CC0;
+    border-radius: 10px;
+    padding: 16px;
+}
+img{
+    width: 100px;
+}
+.grid_container{
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-left: 15px;
+}
+.flex1{
+    display: flex;
+    justify-content: space-between;
+    gap: 375px;
+}
+.flex2{
+    display: flex;
+    justify-content: space-between;
+    gap: 103px;
+}

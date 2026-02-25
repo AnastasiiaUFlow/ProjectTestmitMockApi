@@ -1,14 +1,21 @@
 import React from 'react'
 import userlogo from '../img/logo user.svg'
-export default function Post() {
+import style from "../styles/Post.module.css"
+export default function Post({post, onDelete}) {
   return (
-    <div className=''>
-      <img src={userlogo} alt="" />
-      <div className='grid-container'>
-        <h2>Title</h2>
-        <h4>text</h4>
-        <p>id</p>
-        <button>Delete</button>
+    <div className={style.post}>
+      <img src={post.avatar} alt={post.id}/>
+      <div className={style.grid_container}>
+        <div className={style.flex1}>
+        <h2>{post.title}</h2>
+        <p>{post.id}</p>
+        
+        </div>
+        <div className={style.flex2}>
+        <h4>{post.text}</h4>
+        <button onClick={() => onDelete(post.id)}>Delete</button>
+        </div>
+
       </div>
     </div>
   )

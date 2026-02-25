@@ -1,7 +1,7 @@
 body{
   background-color: #5ECFFF;
 }
-.main-container{
+.main_container{
   display: flex;
   gap: 110px;
   margin: 0 130px;
